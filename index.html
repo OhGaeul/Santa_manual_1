@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>산타 매뉴얼</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+	<style type="text/css">
+		img{display: block;}
+		body, html {margin: 0;padding: 0;height: 100%;background-color: #E6E6E6;}
+		div{font-size: 1.5rem;line-height: 1.5;letter-spacing:00px; word-break: keep-all; text-align: center;}
+		* {box-sizing: border-box; padding: 0; margin: 0;}
+
+		/* Set height of body and the document to 100% */
+		body, html {
+		  height: 100%;
+		  margin: 0 auto;
+		  font-family: 'Kumbh Sans', sans-serif;
+		}
+		h1{font-size: 1.2rem;line-height: 1.5;letter-spacing:00px; color: #c1272d; font-weight: 700; padding-top: 15px;}
+		h2{font-size: 1.2rem;line-height: 1.5;letter-spacing:00px;padding-top: 30px; padding-bottom: 30px;}
+		p{font-size: 1rem;line-height: 1.5;letter-spacing:00px;padding-top: 10px; padding-bottom: 50px;}
+
+
+		/* Style tab links */
+		.tablink {
+		  background-color: #c1272d;
+		  color: white;
+		  float: left;
+		  border: none;
+		  outline: none;
+		  cursor: pointer;
+		  padding: 14px 16px;
+		  font-size: 1.3rem;
+		  width: 20%;
+		}
+
+		/* Style the tab content (and add height:100% for full page content) */
+		.tabcontent {
+		  color: black
+		  display: none;
+		  padding: 100px 0px;
+		  height: 100%;
+		}
+
+		.parent {
+	    display: flex;
+	    align-items: center;}
+		.absolute{display: block;position: absolute;}
+		.home{margin: auto;}
+		.main1{font-size: 1.7rem;line-height: 1.5;letter-spacing:00px;
+		left:calc(50% - 200px);width: 400px}
+		.pm{top: 65vh;}
+		.cimg{font-size: 1.7rem;line-height: 1.5;letter-spacing:00px;}
+		.box-width-1223{left:calc(50% - 410px);width: 820px; margin-top: 10px; margin-bottom: 10px; font-family: 'Kumbh Sans', sans-serif; font-weight: 300; font-size: 1.2rem;}
+		.button-text{font-family: 'Kumbh Sans', sans-serif; font-weight: 400; font-size: 1.5rem; margin-bottom: 50px; margin-top: 10px;}
+		.nav{font-family: 'Kumbh Sans', sans-serif; font-weight: 700;}
+		.footer{background-color: #c1272d;height: 200px;margin-top: 500px;text-align: center;}
+		.footer-text{padding-top:30px ; font-size:0.8rem ;letter-spacing: -1px;line-height: 20px; color: white;}
+		.classs{background: url(classs.gif);
+			background-size: cover;background-attachment: fixed; height: 400px;}
+		.merry{background: url(merry.gif);
+			background-size: cover;background-attachment: fixed; height: 500px;}
+		.white{color: white; padding-top: 170px;}
+		.whitee{color: white; font-size: 1.5rem; padding-bottom: 0px; padding-left: 20px; text-align: left;}
+		.dan{column-count: 2; column-gap: 100px; column-width: 250px;}
+
+		#home {background-color: #E6E6E6;}
+		#1223 {background-color: #E6E6E6;}
+		#1224 {background-color: #E6E6E6;}
+		#1225 {background-color: #E6E6E6;}
+		#1226 {background-color: #E6E6E6;}
+
+
+		<style>
+		details { margin:5px 0 10px; }
+		details > summary { background:#c1272d; color:#fff; padding:10px; outline:0; border-radius:5px; cursor:pointer; transition:background 0.5s; text-align:left; box-shadow: 1px 1px 2px gray;}
+		details > summary::-webkit-details-marker { background:#E6E6E6; color:black; background-size:contain; transform:rotate3d(0, 0, 1, 90deg); transition:transform 0.25s;}
+		details[open] > summary::-webkit-details-marker { transform:rotate3d(0, 0, 1, 180deg);}
+		details[open] > summary { background:#E6E6E6;}
+		details[open] > summary ~ * { animation:reveal 0.5s;}
+		.tpt { background:#E6E6E6; color:black; margin:5px 0 10px; padding:5px 10px; line-height:25px; border-radius:5px; box-shadow: 1px 1px 2px gray;}
+
+		@keyframes reveal {
+		    from { opacity:0; transform:translate3d(0, -30px, 0); }
+		    to { opacity:1; transform:translate3d(0, 0, 0); }
+		}
+		</style>
+	</style>
+	<p style="text-align:center;">
+</head>
+<body>
+	<button class="tablink santa nav" onclick="openPage('Home', this, '#E6E6E6')" id="defaultOpen">Home</button>
+	<button class="tablink nav" onclick="openPage('1223', this, '#E6E6E6')">1223</button>
+	<button class="tablink nav" onclick="openPage('1224', this, '#E6E6E6')">1224</button>
+	<button class="tablink nav" onclick="openPage('1225', this, '#E6E6E6')">1225</button>
+	<button class="tablink nav" onclick="openPage('1226', this, '#E6E6E6')">1226</button>
+
+	<div id="Home" class="tabcontent home">
+	  <img src="logo.png" class="absolute main1">
+	  <h1 class="absolute pm">산타 업무가 처음인 당신에게 알려드리는 산타의 크리스마스 일정.<br>
+								주의: 이 페이지를 절대 아이들에게 보여주지 마세요!</h1>
+
+	<footer>
+	<p class="footer footer-text dan">
+	<span style="font-size: 1.2rem; font-weight: 700;">교육부 문의</span><br>
+	주소 &nbsp;&nbsp;&nbsp;[30119] 세종특별자치시 갈매로 408, 14동 정부세종청사 교육부 / 세종특별자치시 어진동 634<br>
+	일반번호 &nbsp;&nbsp;&nbsp;정부민원안내 전화 상담실 국번없이 110 / 교육부 민원 전화 상담실 02-6222-6060 / 당직실 044-203-6118<br>
+	팩스번호 &nbsp;&nbsp;&nbsp;(민원FAX)044-203-6093 / (문서접수FAX)044-203-6133<br>
+	운영시간 &nbsp;&nbsp;&nbsp;월 - 금 / 9:00 - 18:00 / 공휴일 제외<br><br>
+		Oh Gaeul &nbsp;&nbsp;INSTA. @5__atom<br>Copyright ⓒ 2021 All rights Reserved by Oh Autumn <br>2019년 개정판 바탕 2021.06 작성 &nbsp;&nbsp;&nbsp;<span style="font-size: 1rem; font-weight: 400;">교육부 산타관리부</span></p>
+	</footer>
+	</div>
+
+	<div id="1223" class="tabcontent parent">
+	  <img src="1223.png" class="cimg">
+		<details>
+		    <summary class="box-width-1223">관할구역 확인 / 리스트 다운받기</summary>
+		    <div>
+		    	<button
+					type="button"
+					style="color: #E6E6E6; background: #c1272d; font-size:0.9em; padding:9px 30px;"
+					cursor="pointer"
+					onclick="alert('산타 본인인증이 필요합니다.')" class="button-text">관할구역 확인 / 리스트 다운받기</button>
+		    </div>
+		</details>
+
+		<details>
+		    <summary class="box-width-1223">모바일 앱 안내</summary>
+		    <div>
+		    	<img src="app.png">
+					<p>(2017년 출시, 사용 권장 중)<br>
+						앱을 통해 더 빠르고 간편하게 배정 구역을 확인하고<br>
+						리스트를 다운받을 수 있습니다.<br>
+						산타 여러분의 많은 사용 부탁드립니다.</p>
+		    		  <button
+						type="button"
+						style="color: #E6E6E6; background: #c1272d; font-size:0.9em; padding:9px 30px;"
+						cursor="pointer"
+						onclick="alert('산타 본인인증이 필요합니다.')"
+						class="button-text">스토어 바로가기</button>
+		    </div>
+		</details>
+	</div>
+
+	<div id="1224" class="tabcontent">
+	 <img src="1224.png" class="cimg">
+		<details>
+		    <summary class="box-width-1223">아이 부모에게 선물 전달하기 / 부모 지침서</summary>
+		    <h2>아이의 부모에게 미리 선물 전달하기<br>권고 시간: 오후 11시~새벽 2시</h2>
+		    <p>* 아이에게 들키지 않도록 밤늦게 전달!!<br>* 부모 지침서 잊지 않고 반드시 전달!!</p>
+		    <img src="1224-j.gif">
+		    <h2>부모 지침서</h2>
+		    <p>본부에서 인원수에 맞게 받은 지침서를
+				<br>잊지 않고 지참해주시길 바랍니다.
+				<br>종이에 적힌 내용은 특수처리를 통해
+				<br>어른에게만 보이기 때문에
+				<br>반드시 종이로 전달해드려야 합니다.
+					<br>
+				<br>분실했을 경우 본부로 연락주시기 바랍니다.</p>
+		</details>
+
+		<details>
+		    <summary class="box-width-1223">[5년 이상 경력자 한정] 본인이 아이에게 직접 전달</summary>
+		    <div>
+		    	<p class="classs white">
+		    		부모님에게 전달해주는 대신 아이의 침대 맡에 직접 전달할 수 있습니다.
+					<br>산타 실무경험 5년 이상부터 수강 가능한 ‘돌발상황 대처’ 수업을 듣고
+					<br>수료증을 받으면 직접 전달이 가능합니다.
+					<br><br>
+					돌발상황대처(11045)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+						<button
+						type="button"
+						style="color: #E6E6E6; background: #c1272d; font-size:0.9em; padding:9px 30px;"
+						cursor="pointer"
+						onclick="alert('산타 본인인증이 필요합니다.')"
+						class="button-text">수업 상세보기</button>
+		    	</p>
+
+		    </div>
+		</details>
+	</div>
+
+	<div id="1225" class="tabcontent">
+ 	<img src="1225.png" class="cimg">
+		<details>
+		    <summary class="box-width-1223">Merry Christmas!</summary>
+		    	<p class="merry whitee">12월 25일은 유일하게
+					<br>산타의 존재를 숨기지 않아도 되는 날입니다.
+					<br>‘산타 매뉴얼’ 에 나와있는 복장을 추천합니다.
+					<img src="1225-mc.gif">
+					</p>
+		</details>
+
+		<details>
+		    <summary class="box-width-1223">산타 업무 매뉴얼-산타 추천 복장</summary>
+		    <img src="1225-manual.gif">
+		    <div>
+		    	<button
+				type="button"
+				style="color: #E6E6E6; background: #c1272d; font-size:0.9em; padding:9px 30px;"
+				cursor="pointer"
+				onclick="alert('산타 본인인증이 필요합니다.')"
+				class="button-text">PDF 다운로드</button>
+		    </div>
+		    <h2>산타 추천 복장</h2>
+		    <img src="">
+		</details>
+	</div>
+
+	<div id="1226" class="tabcontent">
+ 	<img src="1226.png" class="cimg">
+		<details>
+		    <summary class="box-width-1223">피드백 회의 / 산타 본부 위치</summary>
+		    <p>12월 25일이 지나면 소속된 지역별로 보고와 피드백 회의를 가집니다.
+				<br>지역별 본부 건물 위치를 확인하세요.
+				<br>회의시간은 기본적으로 오전 11시부터 약 2시간동안 진행됩니다.
+				<br>시간은 본부별로 상이할 수 있으니 아직 긴장의 끈을 놓지 마세요.</p>
+
+				<h2>보고 & 피드백 회의 진행 방식</h2>
+				<p>전 산타 참여 필수
+				<br>구역별 대표들의 간단한 브리핑
+				<br>브리핑이 끝나면 고위 간부들의 조언과 피드백
+				<br>내년 크리스마스에 반영</p>
+		</details>
+
+		<details>
+		    <summary class="box-width-1223">피드백 회의까지 모두 끝냈다면?</summary>
+		    <img src="pillow2.png">
+				<h2>수고 많으셨습니다. <br> 더 나은 내년 크리스마스를 위해 푹 쉬어주세요!</h2>
+		</details>
+		    </div>
+		</details>
+	</div>
+
+	<script>
+	function openPage(pageName,elmnt,color) {
+	  var i, tabcontent, tablinks;
+	  tabcontent = document.getElementsByClassName("tabcontent");
+	  for (i = 0; i < tabcontent.length; i++) {
+	    tabcontent[i].style.display = "none";
+	  }
+	  tablinks = document.getElementsByClassName("tablink");
+	  for (i = 0; i < tablinks.length; i++) {
+	    tablinks[i].style.backgroundColor = "";
+	  }
+	  document.getElementById(pageName).style.display = "block";
+	  elmnt.style.backgroundColor = color;
+	}
+
+	// Get the element with id="defaultOpen" and click on it
+	document.getElementById("defaultOpen").click();
+	</script>
+</body>
+</html>
